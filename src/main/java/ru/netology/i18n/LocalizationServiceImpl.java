@@ -5,11 +5,10 @@ import ru.netology.entity.Country;
 public class LocalizationServiceImpl implements LocalizationService {
 
     public String locale(Country country) {
-        switch (country) {
-            case RUSSIA:
-                return "Добро пожаловать";
-            default:
-                return "Welcome";
-        }
+        return switch (country) {
+            case RUSSIA -> "Добро пожаловать";
+            case USA -> "Welcome";
+            default -> "Welcome";
+        };
     }
 }

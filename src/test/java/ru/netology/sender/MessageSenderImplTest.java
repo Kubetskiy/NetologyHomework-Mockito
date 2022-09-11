@@ -61,6 +61,7 @@ class MessageSenderImplTest {
     }
 
 //  Реализация без Mockito ----------------------------------------------------------
+
     /**
      * @param ip           from CsvSource
      * @param expectedText from CsvSource
